@@ -57,9 +57,15 @@ Mini-CRM is a Laravel-based web application designed to manage companies and the
 
 ## Installation
 
-1. **Clone the Repository**:
-   ```bash
-   git clone https://github.com/your_username/mini-crm.git
+-Clone the repository: `git clone https://github.com/your_username/mini-crm.git`
+-Install the required dependencies: `composer update`
+- Copy the example .env file and set up the database configuration: `cp .env.example .env`
+- Generate the application key: `php artisan key:generate`
+- Migrate the database: `php artisan migrate`
+- Seed the database: `php artisan db:seed --class=UserSeeder`
+- Link the storage directory: `php artisan storage:link`
+- Start the development server: `php artisan serve`
+
 
 
 
