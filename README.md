@@ -14,8 +14,8 @@ Mini-CRM is a Laravel-based web application designed to manage companies and the
 
 ## Requirements
 
-- **PHP** >= 7.3
-- **Laravel** >= 8.x
+- **PHP** 
+- **Laravel** 
 - **Database**: MySQL or any Laravel-supported database
 - **Mailgun Account**: For email notifications
 
@@ -57,8 +57,8 @@ Mini-CRM is a Laravel-based web application designed to manage companies and the
 
 ## Installation
 
--Clone the repository: `git clone https://github.com/your_username/mini-crm.git`
--Install the required dependencies: `composer update`
+- Clone the repository: `git clone https://github.com/your_username/mini-crm.git`
+- Install the required dependencies: `composer update`
 - Copy the example .env file and set up the database configuration: `cp .env.example .env`
 - Generate the application key: `php artisan key:generate`
 - Migrate the database: `php artisan migrate`
