@@ -8,8 +8,7 @@ Mini-CRM is a Laravel-based web application designed to manage companies and the
 - [Installation](#installation)
 - [Usage](#usage)
 - [Email Notifications](#email-notifications)
-- [Testing](#testing)
-- [Additional Notes](#additional-notes)
+
 
 ---
 
@@ -61,3 +60,35 @@ Mini-CRM is a Laravel-based web application designed to manage companies and the
 1. **Clone the Repository**:
    ```bash
    git clone https://github.com/your_username/mini-crm.git
+
+
+
+## Usage
+Access the Application:
+
+Go to http://localhost:8000 in your browser.
+Log in:
+
+Use the seeded administrator credentials:
+Email: admin@admin.com
+Password: password
+Manage Companies and Employees:
+
+Once logged in, you can create, view, edit, and delete companies and employees.
+To add a new company or employee, click the "Create" button on the respective index page.
+For each company or employee entry, you’ll find options to edit or delete directly from the table view.
+
+
+## Email Notifications
+Email Setup
+This application includes an email notification feature that sends an email to the admin email address whenever a new company is created.
+
+Mailgun Setup:
+
+Register for a Mailgun account and obtain your SMTP credentials.
+Update your .env file with these credentials as shown in the Installation section.
+Admin Notification:
+
+Emails are sent to the address specified in MAIL_FROM_ADDRESS in the .env file.
+Sending Emails
+The CompanyController will send an email notification to the admin upon each new company creation, using the Mailgun service.
